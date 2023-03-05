@@ -491,7 +491,6 @@ h1 {
       margin: 10px;
       border-radius: 30px;
     }
-  
     .img-box h3,
     .img-box2 h3 {
       font-size: 15px;
@@ -499,7 +498,6 @@ h1 {
       left: 10px;
     }
   }
-
 .contact-container {
     display: grid;
     grid-template-columns: auto;
