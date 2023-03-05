@@ -484,14 +484,16 @@ h1 {
     .img-container {
         overflow: hidden;
     }
-    .img-box {
+    .img-box,
+    .img-box2 {
       width: 65px;
       height: 300px;
       margin: 10px;
       border-radius: 30px;
     }
   
-    .img-box h3 {
+    .img-box h3,
+    .img-box2 h3 {
       font-size: 15px;
       bottom: 10px;
       left: 10px;
@@ -503,6 +505,7 @@ h1 {
     grid-template-columns: auto;
     grid-gap: 20px;
     margin: 30px;
+    padding-top: 50px;
 }
 .form-title {
     grid-column: 1 / 2;
