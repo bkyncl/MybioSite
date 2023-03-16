@@ -11,6 +11,7 @@ Course: CSD340
     line-height:1.6;
     box-sizing: border-box;
 }
+
 .navheader{
     position: fixed;
     width: 100%;
@@ -22,7 +23,7 @@ Course: CSD340
 }
 .navcontainer{
     width: 100%;
-    max-width: 1170px;
+    max-width: 1400px;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -144,17 +145,24 @@ header, footer, h1, .card-title{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .scene {
     padding-top: 60px;
     background-color: #232225;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .scene-grid {
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 4fr 2fr 1fr 1fr 2fr 2fr 2fr 1fr 2fr 4fr;
     padding: 10px;
-
 }
 .scene-grid li {
     list-style: none;
@@ -327,6 +335,7 @@ h1 {
     grid-template-columns: auto auto auto;
     grid-column-gap: 25px;
     padding: 20px;
+    max-width: 1400px;
 }
 .card {
     box-shadow:  3px 4px 8px 2px rgba(6, 6, 6, 0.2);
@@ -361,6 +370,7 @@ h1 {
     }
 }
 .gallery-container {
+    max-width: 1400px;
     width: 100%;
     display: flex;
     padding-top: 50px;
@@ -466,6 +476,9 @@ h1 {
     text-shadow: 2px 2px 2px #000000
 }
 @media (max-width: 768px) {
+    .gallery-container {
+        margin: 0 auto;
+    }
     .gallery-title h1 {
         font-size: 50px;
         margin: 30px 0px 30px 30px;
@@ -499,10 +512,11 @@ h1 {
     }
   }
 .contact-container {
+    max-width: 1400px;
+    width: 100%;
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 20px;
-    margin: 30px;
+    grid-gap: 30px;
     padding-top: 50px;
 }
 .form-title {
@@ -512,17 +526,18 @@ h1 {
     font-size: 70px;
     font-weight: 400;
     text-align: left;
-    margin: 60px 0px 30px 80px;
+    margin: 50px 0px 30px 100px;
 }
 .form-title p {
     width: 50%;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 form {
     grid-column: 2 / 3;
     text-align: left;
     margin-right: 40px;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 input,
 textarea,
@@ -572,6 +587,7 @@ input:focus {
     .contact-container {
       grid-template-columns: 1fr;
       margin: 10px;
+      padding: 10px;
     }
   
     .form-title h1 {
